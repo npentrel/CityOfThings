@@ -3,10 +3,7 @@
 
 Smart city improvement game - do good, get points, collect rewards!
 
-<<<<<<< 5e5030eed8bbf19de680e2bb900e8dd863e1d078
 ##How does it work? 
-=======
->>>>>>> Added API enpoint documentation
 * Build with Python Flask on IBM BlueMix
 * Android for the frontend
 
@@ -28,10 +25,6 @@ Smart city improvement game - do good, get points, collect rewards!
 - [ ] AirSensa Data API
 - [ ] Nice Open Data
 
-<<<<<<< 5e5030eed8bbf19de680e2bb900e8dd863e1d078
-=======
-
->>>>>>> Added API enpoint documentation
 # User
 
 ## Create User
@@ -173,4 +166,3 @@ Gets all the rewards available
         "error": "insuficientFunds"
     }
 ```
-
