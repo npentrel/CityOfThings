@@ -3,6 +3,8 @@ City of Things
 
 Smart city improvement game - do good, get points, collect rewards!
 
+`http://cityofthings.eu-gb.mybluemix.net`
+
 How does it work? 
 -----------------
 * Build with Python Flask on IBM BlueMix
