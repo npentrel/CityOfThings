@@ -1,13 +1,15 @@
-# How does it work? 
--------------------
+City of Things 
+--------------
 
 Smart city improvement game - do good, get points, collect rewards!
 
-##How does it work? 
+How does it work? 
+-----------------
 * Build with Python Flask on IBM BlueMix
 * Android for the frontend
 
-##Integrated APIs
+Integrated APIs
+---------------
 - [ ] TM Forum APIs
     - [ ] Trouble Ticket 
     - [ ] Customer Management 
