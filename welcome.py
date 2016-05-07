@@ -42,18 +42,48 @@ def SayHello(name):
 
 @app.route('/api/user')
 def CreateUser(name):
-    return jsonify({'success': "Successful"})
+    response = {
+        "userid": 31337
+    }
+    return jsonify(response)
 
 @app.route('/api/rewards')
 def GetRewards(task):
-    return jsonify({'reward': "Voucher"})
+    rewards = {"Rewards": 
+            [
+                {
+                    "title": "Amazon $100 voucher"
+                    "content":
+                    "points": 100
+                    "id" : 1337
+                },
+            ]}
+    return jsonify(rewards)
+
+@app.route('/api/rewards/<id>')
+def RedeemReward(id):
+    response = {
+        "error": "insuficientFunds"
+    }
+    return jsonify(response)
 
 @app.route('/api/tasks')
 def GetTasks():
-    list = [
-        {'name': 'Clean City', 'date': 'today'}
-    ]
-    return jsonify(results=list)
+    list = { 
+        "tasks":
+            [
+                {
+                    "title": "Clean the road"
+                    "content": "Lorem ipsum wololo ipsum"
+                    "coordinates": [1.0, 2.0]
+                    "address": "Rue de Wololo"
+                    "category": "cleanup"
+                    "time": "2012-04-23T18:25:43.511Z"
+                    "id": 420
+                },
+            ]
+    }
+    return jsonify(list)
 
 
 port = os.getenv('PORT', '5000')
