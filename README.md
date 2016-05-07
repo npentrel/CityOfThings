@@ -1,21 +1,24 @@
-## TODO:
-* TM Forum APIs
-    * Trouble Ticket 
-    * Customer Management 
-    * Product Catalog Management
-    * Product Inventory Management
-    * Product Ordering
-    * Billing Management
-    * Party Management
-    * SLA Management
-    * Usage Management
-    * Performance Management
-* IBM BlueMix
-* Ericsson APIs
-* IWARE APIs
-* AirSensa Data API
-* Nice Open Data
+##How does it work? 
+* Build with Python Flask on IBM BlueMix
+* Android for the frontend
 
+##Integrated APIs
+- [ ] TM Forum APIs
+    - [ ] Trouble Ticket 
+    - [ ] Customer Management 
+    - [ ] Product Catalog Management
+    - [ ] Product Inventory Management
+    - [ ] Product Ordering
+    - [ ] Billing Management
+    - [ ] Party Management
+    - [ ] SLA Management
+    - [ ] Usage Management
+    - [ ] Performance Management
+- [x] IBM BlueMix
+- [ ] Ericsson APIs
+- [ ] IWARE APIs
+- [ ] AirSensa Data API
+- [ ] Nice Open Data
 
 
 #Sample Bluemix Python Web application
