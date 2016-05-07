@@ -23,7 +23,8 @@ Integrated APIs
     - [ ] Performance Management
 - [x] IBM BlueMix
 - [ ] Ericsson APIs
-- [ ] FIWARE APIs
+- [x] FIWARE APIs
+    - Amsterdam Festivals (http://www.amsterdamopendata.nl/files/Festivals.json)
 - [ ] AirSensa Data API
 - [ ] Nice Open Data
 

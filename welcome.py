@@ -1,5 +1,6 @@
 import os
 from flask import Flask, jsonify
+import urllib, json
 
 app = Flask(__name__)
 
@@ -19,21 +20,44 @@ def create_user():
 
 @app.route('/api/tasks', methods=['GET'])
 def get_tasks():
-    list = {
-        "tasks":
-            [
-                {
-                    "title": "Clean the road",
-                    "content": "Lorem ipsum wololo ipsum",
-                    "coordinates": [1.0, 2.0],
-                    "address": "Rue de Wololo",
-                    "category": "cleanup",
-                    "time": "2012-04-23T18:25:43.511Z",
-                    "id": 420
-                }
-            ]
-    }
-    return jsonify(list)
+    url = "http://www.amsterdamopendata.nl/files/Festivals.json"
+    response = urllib.urlopen(url)
+    data = json.loads(response.read())
+    count = 0
+    tasks = []
+    for d in data:
+        tasks.append({
+            "title": d['title'],
+            "content": d['details']['en']['shortdescription'],
+            "coordinates": [d['location']['latitude'], d['location']['longitude']],
+            "address": d['location']['adress'],
+            "category": "cleanup",
+            "time": d['details']['en']['calendarsummary'],
+            "id": count
+            })
+        if count == 1:
+            print 
+
+        count += 1
+    print tasks
+    print count
+    list2 = {"tasks": tasks}
+
+    # list = { 
+    #     "tasks":
+    #         [
+    #             {
+    #                 "title": "Clean the road",
+    #                 "content": "Lorem ipsum wololo ipsum",
+    #                 "coordinates": [1.0, 2.0],
+    #                 "address": "Rue de Wololo",
+    #                 "category": "cleanup",
+    #                 "time": "2012-04-23T18:25:43.511Z",
+    #                 "id": 420
+    #             }
+    #         ]
+    # }
+    return jsonify(list2)
 
 
 @app.route('/api/tasks/signup')
@@ -64,4 +88,4 @@ def RedeemReward(reward_id):
 
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(port))
+    app.run(host='0.0.0.0', port=int(port), debug=True)
