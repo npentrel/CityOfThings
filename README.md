@@ -15,8 +15,8 @@ Integrated APIs
 - [x] Ericsson APIs
 - [x] TM Forum APIs
     - [ ] Trouble Ticket 
-    - [ ] Customer Management 
-    - [ ] Product Catalog Management
+    - [x] Customer Management 
+    - [x] Product Catalog Management
     - [ ] Product Inventory Management
     - [ ] Product Ordering
     - [ ] Billing Management
@@ -24,7 +24,6 @@ Integrated APIs
     - [ ] SLA Management
     - [ ] Usage Management
     - [ ] Performance Management
-    * (Product Catalog, Inventory, Ordering, Customer Management, Party Management)
 - [x] IBM BlueMix
 - [x] FIWARE APIs
     - Amsterdam Festivals (http://www.amsterdamopendata.nl/files/Festivals.json)
