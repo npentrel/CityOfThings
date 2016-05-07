@@ -1,9 +1,16 @@
 import os
-from flask import Flask, jsonify
-import urllib, json
+from flask import Flask, jsonify, request
+import urllib
+import json
+import random
+
+import requests
+
+from data import new_customer
 
 app = Flask(__name__)
 
+auth_token = 'MjI4ODhjMDg4NjBkODZiNjEyYWI4ZjI4NmZjNzMxMjgxNzc2MTlmOTUzN2VjOTJjOWM6bHMxREdra3k0dG9sWmFqdWJzcjJ5NUV0YTZsanZBbDFYRXVqejB5MkpxZTFWUnBLY0E='
 
 @app.route('/')
 def Welcome():
@@ -12,6 +19,12 @@ def Welcome():
 
 @app.route('/api/user', methods=['POST'])
 def create_user():
+    new_customer['name'] = "{} {}".format(request.args.get('FirstName'),
+                                      request.args.get('LastName'))
+    new_customer['contactMedium']['medium']['emailAddress'] = request.args.get('Email')
+
+    # requests.post
+
     response = {
         "userid": 31337
     }
@@ -33,25 +46,12 @@ def get_tasks():
             "address": d['location']['adress'],
             "category": "cleanup",
             "time": d['details']['en']['calendarsummary'],
-            "id": count
-            })    
+            "id": count,
+            "reward": random.uniform(4.0, 7.5)
+            })
         count += 1
     list2 = {"tasks": tasks}
 
-    # list = { 
-    #     "tasks":
-    #         [
-    #             {
-    #                 "title": "Clean the road",
-    #                 "content": "Lorem ipsum wololo ipsum",
-    #                 "coordinates": [1.0, 2.0],
-    #                 "address": "Rue de Wololo",
-    #                 "category": "cleanup",
-    #                 "time": "2012-04-23T18:25:43.511Z",
-    #                 "id": 420
-    #             }
-    #         ]
-    # }
     return jsonify(list2)
 
 
