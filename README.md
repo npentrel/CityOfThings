@@ -1,3 +1,23 @@
+## TODO:
+* TM Forum APIs
+    * Trouble Ticket 
+    * Customer Management 
+    * Product Catalog Management
+    * Product Inventory Management
+    * Product Ordering
+    * Billing Management
+    * Party Management
+    * SLA Management
+    * Usage Management
+    * Performance Management
+* IBM BlueMix
+* Ericsson APIs
+* IWARE APIs
+* AirSensa Data API
+* Nice Open Data
+
+
+
 #Sample Bluemix Python Web application
 
 The sample is using [Flask microframework](http://flask.pocoo.org/) and is intented to test the Python support on [IBM's Bluemix](https://bluemix.net/) environment which is based on Cloud Foundry.
