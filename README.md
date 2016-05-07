@@ -101,7 +101,7 @@ HTTP/1.1 400 Bad Request
 
 ## Sign up
 
-`POST api/tasks/signup`
+`POST api/tasks/signup/(id:int)`
 
 ### Parameters
 
