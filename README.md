@@ -21,7 +21,7 @@ Smart city improvement game - do good, get points, collect rewards!
     - [ ] Performance Management
 - [x] IBM BlueMix
 - [ ] Ericsson APIs
-- [ ] IWARE APIs
+- [ ] FIWARE APIs
 - [ ] AirSensa Data API
 - [ ] Nice Open Data
 
