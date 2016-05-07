@@ -42,11 +42,11 @@ def SayHello(name):
 
 @app.route('/api/user')
 def CreateUser(name):
-    return jsonify(results={'success': "Successful"})
+    return jsonify({'success': "Successful"})
 
 @app.route('/api/rewards')
 def GetRewards(task):
-    return jsonify(results={'reward': "Voucher"})
+    return jsonify({'reward': "Voucher"})
 
 @app.route('/api/tasks')
 def GetTasks():
