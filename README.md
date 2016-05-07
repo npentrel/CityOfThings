@@ -31,7 +31,7 @@ Smart city improvement game - do good, get points, collect rewards!
 
 Creates new user in the game
 
-`PUSH /api/user'
+`POST /api/user`
 
 ### Parameters
 
@@ -99,7 +99,7 @@ HTTP/1.1 400 Bad Request
 
 ## Sign up
 
-`PUSH api/tasks/signup`
+`POST api/tasks/signup`
 
 ### Parameters
 
