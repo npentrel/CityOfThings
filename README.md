@@ -10,7 +10,8 @@ How does it work?
 
 Integrated APIs
 ---------------
-- [ ] TM Forum APIs
+- [x] Ericsson APIs
+- [x] TM Forum APIs
     - [ ] Trouble Ticket 
     - [ ] Customer Management 
     - [ ] Product Catalog Management
@@ -21,8 +22,8 @@ Integrated APIs
     - [ ] SLA Management
     - [ ] Usage Management
     - [ ] Performance Management
+    * (Product Catalog, Inventory, Ordering, Customer Management, Party Management)
 - [x] IBM BlueMix
-- [ ] Ericsson APIs
 - [x] FIWARE APIs
     - Amsterdam Festivals (http://www.amsterdamopendata.nl/files/Festivals.json)
 - [ ] AirSensa Data API

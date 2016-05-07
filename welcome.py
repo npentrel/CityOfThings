@@ -34,13 +34,8 @@ def get_tasks():
             "category": "cleanup",
             "time": d['details']['en']['calendarsummary'],
             "id": count
-            })
-        if count == 1:
-            print 
-
+            })    
         count += 1
-    print tasks
-    print count
     list2 = {"tasks": tasks}
 
     # list = { 
