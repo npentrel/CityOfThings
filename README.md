@@ -1,8 +1,12 @@
-#City of Parks
+# How does it work? 
+-------------------
 
 Smart city improvement game - do good, get points, collect rewards!
 
+<<<<<<< 5e5030eed8bbf19de680e2bb900e8dd863e1d078
 ##How does it work? 
+=======
+>>>>>>> Added API enpoint documentation
 * Build with Python Flask on IBM BlueMix
 * Android for the frontend
 
@@ -24,6 +28,10 @@ Smart city improvement game - do good, get points, collect rewards!
 - [ ] AirSensa Data API
 - [ ] Nice Open Data
 
+<<<<<<< 5e5030eed8bbf19de680e2bb900e8dd863e1d078
+=======
+
+>>>>>>> Added API enpoint documentation
 # User
 
 ## Create User
@@ -148,7 +156,7 @@ HTTP/1.1 400 Bad Request
 
 Gets all the rewards available
 
-`GET /api/rewards/<id: int>'
+`GET /api/rewards/(id: int)'
 
 
 ### Response
@@ -165,3 +173,4 @@ Gets all the rewards available
         "error": "insuficientFunds"
     }
 ```
+
