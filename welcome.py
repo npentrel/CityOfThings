@@ -40,6 +40,18 @@ def SayHello(name):
     }
     return jsonify(results=message)
 
+@app.route('/api/user')
+def CreateUser(name):
+    return jsonify(results={'success': "Successful"})
+
+@app.route('/api/tasks')
+def GetTasks():
+    list = [
+        {'name': 'Clean City', 'date': 'today'}
+    ]
+    return jsonify(results=list)
+
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=int(port))
